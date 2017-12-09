@@ -48,7 +48,3 @@ for i in range(len(layers)-2, 0, -1):
 vis = vis.transpose(1, 2, 0)
 vis = (vis - vis.min()) / (vis.max() - vis.min())
 plt.imsave('vis.png', vis)
-
-
-
-
