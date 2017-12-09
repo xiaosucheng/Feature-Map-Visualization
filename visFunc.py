@@ -4,6 +4,8 @@ import cv2
 
 class VisFunc:
     def __init__(self, net):
+	''' load net
+	'''
 	self.net = net
 
     def reverse(self, inp):
