@@ -4,7 +4,7 @@ import cv2
 
 class VisFunc:
     def __init__(self, net):
-	    self.net = net
+	self.net = net
 
     def reverse(self, inp):
         ''' reverse the vector of every row of array
