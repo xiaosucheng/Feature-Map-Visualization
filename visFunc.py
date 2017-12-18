@@ -5,6 +5,8 @@ import cv2
 class VisFunc:
     def __init__(self, net):
 	''' load net
+
+	net: VGG-16 caffe net
 	'''
 	self.net = net
 
@@ -16,7 +18,7 @@ class VisFunc:
         return: C x N tensor
         '''
         _, col = inp.shape
-        out = inp[:, [ix for ix in range(col-1, -1, -1)]]
+        out = inp[:, [range(col-1, -1, -1)]]
         return out
 
     def refc(self, inp, name):
